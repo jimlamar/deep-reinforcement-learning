@@ -53,26 +53,28 @@ The model is linear neural network with 3 hidden layers (512, 1024, 128 nodes fo
 
 The model.pt weight file gnerated, used the following hyperparameter, run over 500 episodes.
 
-#Model hidden layer nodes
-FC1 = 512
-
-FC2 = 1024
-
-FC3 = 128
-
-
 #Replay Buffer
 BUFFER_SIZE = 100000     # Replay buffer size, 300 steps per episode  
+
 BATCH_SIZE = 32         # Batch size  
 
+
 #Learning Parameters
+
 GAMMA = 0.995           # Discount gamma factor  
+
 TAU = .001              # Soft update of target parameters
+
 LR = 0.0001              # learning rate 
+
 REPLAY_INTERVAL = 4     # How often replay implemented
+
 EPS_START = .998         # Starting  epsilon, for epsilon-greedy action selection
+
 EPS_END = 0.03          # Minimum value of epsilon
+
 EPS_DECAY = 0.980       # Factor per episode decreasing epsilon
+
 
 
 
